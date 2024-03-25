@@ -2,4 +2,58 @@
 {% block title %}home{% endblock %}
 {% block body %}
 
+<style type="text/css">
+    #centerLayer {
+     margin-left: 25%;
+     width: 50%;
+     padding: 10px;
+    }
+   </style>
+
+   <div class="container-fluid py-5" id="centerLayer">
+    <h1 class="display-5 fw-bold">Wellcome to shop "WudbuW"</h1>
+    <p class="col-md-8 fs-4">Our store doesn't just sell sneakers! Using a neural network, you can always find exactly those sneakers that you once liked.</p>
+    <button onclick="document.location='/'" class="btn btn-primary btn-lg" type="button">Exit</button>
+  </div>
+
+<center><h2 class="pb-2 border-bottom" >OUR SERVISES</h2></center>
+<div class="row g-4 py-5 row-cols-1 row-cols-lg-3" id="centerLayer">
+  <div class="col d-flex align-items-start">
+    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+      <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+    </div>
+    <div>
+      <h3 class="fs-2 text-body-emphasis">Shop</h3>
+      <p>In our store you can find almost all the most famous and fashionable sneakers from the Nike brand. Visit our store, you will only have positive emotions!</p>
+      <a href="/shop" class="btn btn-primary">
+        Shop
+      </a>
+    </div>
+  </div>
+  <div class="col d-flex align-items-start">
+    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+      <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+    </div>
+    <div>
+      <h3 class="fs-2 text-body-emphasis">Neural Network</h3>
+      <p>For your convenience, a neural network has been developed to identify a sneaker model from its photograph.</p>
+      <a href="/neural_network" class="btn btn-primary">
+        Neural Netork
+      </a>
+    </div>
+  </div>
+  <div class="col d-flex align-items-start">
+    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+      <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+    </div>
+    <div>
+      <h3 class="fs-2 text-body-emphasis">About</h3>
+      <p>The site was developed by Vladimir Tsyganov - a beginner specialist in web development.</p>
+      <a href="/about" class="btn btn-primary">
+        About
+      </a>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
